@@ -1,0 +1,301 @@
+/* Définition des polices personnalisées */
+
+@font-face
+{
+    font-family: 'BallparkWeiner';
+    src: url('fonts/ballpark.eot');
+    src: url('fonts/ballpark.eot?#iefix') format('embedded-opentype'),
+         url('fonts/ballpark.woff') format('woff'),
+         url('fonts/ballpark.ttf') format('truetype'),
+         url('fonts/ballpark.svg#BallparkWeiner') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face
+{
+    font-family: 'Dayrom';
+    src: url('fonts/dayrom.eot');
+    src: url('fonts/dayrom.eot?#iefix') format('embedded-opentype'),
+         url('fonts/dayrom.woff') format('woff'),
+         url('fonts/dayrom.ttf') format('truetype'),
+         url('fonts/dayrom.svg#Dayrom') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+
+body{
+    background : url('images/fond_jaune.png'); 
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    color : #181818; 
+    width: 100%;
+}
+
+#bloc_page{
+    width: 900px;
+    margin: auto;
+}
+
+section h1, footer h1, nav a{
+    font-family: Dayrom, serif;
+    font-weight: normal;
+    text-transform: uppercase;
+}
+
+header{
+    background:url('images/separateur.png') repeat-x;
+    background-position: bottom;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#titre_principal{
+    display: flex ;
+    flex-direction: column;
+
+}
+#logo{
+    display:  flex;
+    flex-direction: row;
+    align-items: baseline;
+}
+
+#logo img{
+    width: 50px;
+    height: 50px; 
+}
+
+header h1{
+    font-family: 'BallparkWeiner', serif;
+    font-size: 2.5em;
+    font-weight: normal;
+    margin : 0 0 0 10px; 
+}
+
+header h2{
+    font-family: Dayrom, serif;
+    font-size: 1.1em;
+    margin-top: 0px;
+    font-weight: normal;
+    
+}
+
+/*Navigation*/
+
+nav ul{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li{
+    margin-right: 15px;
+}
+nav a{
+    font-size: 1.3;
+    color : #181818;
+    padding-bottom: 3px;
+    text-decoration: none;
+}
+
+
+nav a :hover{
+    color : #760001; 
+    border-bottom : 3px solid #760001;
+}
+
+
+/*Banière*/
+
+#baniere_image{
+    margin-top: 15px;
+    height: 200px;
+    border-radius: 5px;
+    background : url('images/san.jpg') no-repeat;
+    position: relative;
+    box-shadow: 0px 4px 4px #1c1a19;
+    margin-bottom: 25px;
+   
+
+}
+
+#baniere_description{
+    position: absolute; 
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    border-radius:  0px 0px 5px 5px;
+    width: 98.4%;
+    height: 33px;
+    padding-top: 15px;
+    padding-left: 15px;
+    background-color: rgba(24, 24, 24, 0.7);
+    color : white;
+    font-size: 0.8em; 
+    ;
+}
+
+.bouton_rouge{
+    
+    height: 25px;
+    position: relative;
+    right: 5px;
+    bottom: 5px;
+    background: url('images/fond_degraderouge.png') repeat-x;
+    border : 1px solid #760001;
+    border-radius: 5px;
+    font-size: 1.2em;
+    text-align: center;
+    padding: 4px 8px 0px 8px;
+    color : white;
+    text-decoration : none;
+}
+
+.bouton_rouge img{
+    border: 0   ;
+}
+
+section{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+article, aside{
+    text-align: justify;
+}
+
+article{
+    margin-right: 20px;
+    flex : 3;
+}
+
+.ico_categorie{
+    vertical-align: middle;
+    margin-right: 8px;
+}
+
+article p{
+    font-size: 0.8em;
+}
+
+aside{
+    flex : 1.2;
+    position:  relative;
+    background-color: #706b64;
+    box-shadow: 0px 2px 5px #1c1a19;
+    border-radius: 5px;
+    padding : 10px; 
+    color : white; 
+    text-align: justify;
+    font-size : 0.9em;
+    margin-top: 10px;
+    margin-bottom: 200px;  
+}
+
+#fleche_bulle{
+    position: absolute; 
+    top :200px; 
+    left: -12px;
+}
+
+#photo_voyageur{
+    text-align: center;
+}
+
+#photo_voyageur img{
+    box-shadow: 2px 2px 10px #ffffff;
+    border-radius: 5px;
+    width: 300px;
+    height: 200px; 
+}
+
+aside img{
+    margin-right: 5px;
+}
+
+aside h1{
+    text-align: center;
+}
+
+#reseaux_sociaux{
+    display: inline-flex;
+    justify-content: space-between;
+    margin: 25px;
+    margin-left: 40px;
+}
+
+#reseaux_sociaux img{
+    width: 42px;
+    padding: 5px;
+    height: 40px;
+    border-radius: 10px;   
+
+}
+
+
+article p{
+    font-size: 1em;
+    text-indent: 80px;
+}
+
+/*Le pieds de page*/
+
+footer{
+    display: flex;
+    background : 
+                url('images/ico_top.png') no-repeat top center, 
+                url('images/separateur.png') repeat-x top, 
+                url('images/ombre.png')repeat-x top;
+
+    padding-top: 25px;
+}
+
+
+footer p, footer ul{
+    font-size: 1em;
+}
+
+footer h1{
+    font-size: 1.2em;
+}
+
+
+#tweet{
+    width: 28%;
+}
+
+#mes_photos{
+    width: 55%;
+}
+
+
+#mes_photos img{
+    width: 80px;
+    height: 70px;
+    padding: 5px;
+    border-radius: 8px;   
+    margin-left: 20px;
+}
+
+#liste_amis{
+    display: flex;
+    justify-content: space-between;
+    
+    margin-top: 0;
+}
+
+#mes_amis ul{
+    list-style-image: url('images/ico_liensexterne.png');
+    padding-left: 40px;
+}
+
+#mes_amis a{
+    text-decoration: none;
+    color : #760001; 
+}
+
+#mes_photos h1, #mes_amis h1{
+    text-align: center;
+}
